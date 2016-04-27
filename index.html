@@ -266,16 +266,9 @@
       
         
           
-            <p>使用powershell安装chocolatey的过程中出现如下错误提示：</p>
-<pre><code>&amp; : 无法加载文件 C:\Users\kevin\AppData\Local\Temp\chocolatey\chocInstall\tools\chocolateyInstall.ps1，因为在此系统上禁
-止运行脚本。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
-所在位置 行:164 字符: 3
-+ &amp; $chocInstallPS1
-+   ~~~~~~~~~~~~~~~
-    + CategoryInfo          : SecurityError: (:) []，PSSecurityException
-    + FullyQualifiedErrorId : UnauthorizedAccess
-</code></pre><hr>
-<h5 id="解决办法如下："><a href="#解决办法如下：" class="headerlink" title="解决办法如下："></a>解决办法如下：</h5><p>直接运行powershell时提示“无法加载文件ps1，因为在此系统中禁止执行脚本。<br>有关详细信息，请参阅 “get-help about_signing”。</p>
+            <p>使用powershell安装chocolatey的过程中出现如下错误提示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&amp; : 无法加载文件 C:\Users\kevin\AppData\Local\Temp\chocolatey\chocInstall\tools\chocolateyInstall.ps1，因为在此系统上禁</span><br><span class="line">止运行脚本。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。</span><br><span class="line">所在位置 行:164 字符: 3</span><br><span class="line">+ &amp; $chocInstallPS1</span><br><span class="line">+   ~~~~~~~~~~~~~~~</span><br><span class="line">    + CategoryInfo          : SecurityError: (:) []，PSSecurityException</span><br><span class="line">    + FullyQualifiedErrorId : UnauthorizedAccess</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h4 id="解决办法如下："><a href="#解决办法如下：" class="headerlink" title="解决办法如下："></a>解决办法如下：</h4><p>直接运行powershell时提示“无法加载文件ps1，因为在此系统中禁止执行脚本。<br>有关详细信息，请参阅 “get-help about_signing”。</p>
 <p>主要是由于没有权限执行脚本。</p>
 <ol>
 <li>执行<code>get-help about_signing</code>提示了解执行策略;  </li>
