@@ -66,7 +66,13 @@
 编译为静态文件,并且部署到github上：
 1$ hexo generate -d
 
-详细使用文档请见：hexo文档">
+详细使用文档请见：hexo文档
+
+
+
+使用hexo的过程中踩到的一些坑：
+
+post的文件名不要用中文。否则，直接访问该post时，图片无法加载，因为此时图片的访问路径包含有中文（路径中的中文会被">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo常用CLI">
 <meta property="og:url" content="http://yoursite.com/2016/04/26/hexo常用CLI/index.html">
@@ -80,8 +86,14 @@
 编译为静态文件,并且部署到github上：
 1$ hexo generate -d
 
-详细使用文档请见：hexo文档">
-<meta property="og:updated_time" content="2016-04-26T13:28:20.224Z">
+详细使用文档请见：hexo文档
+
+
+
+使用hexo的过程中踩到的一些坑：
+
+post的文件名不要用中文。否则，直接访问该post时，图片无法加载，因为此时图片的访问路径包含有中文（路径中的中文会被">
+<meta property="og:updated_time" content="2016-04-27T13:37:08.594Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo常用CLI">
 <meta name="twitter:description" content="新建文章：
@@ -93,7 +105,13 @@
 编译为静态文件,并且部署到github上：
 1$ hexo generate -d
 
-详细使用文档请见：hexo文档">
+详细使用文档请见：hexo文档
+
+
+
+使用hexo的过程中踩到的一些坑：
+
+post的文件名不要用中文。否则，直接访问该post时，图片无法加载，因为此时图片的访问路径包含有中文（路径中的中文会被">
 
 
 
@@ -298,6 +316,25 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate <span class="_">-d</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>详细使用文档请见：<a href="https://hexo.io/zh-cn/docs/writing.html" title="你好啊，shaby~" target="_blank" rel="external">hexo文档</a></p>
+</li>
+</ol>
+<hr>
+<p>使用hexo的过程中踩到的一些坑：</p>
+<ol>
+<li><p>post的文件名不要用中文。否则，直接访问该post时，图片无法加载，因为此时图片的访问路径包含有中文（路径中的中文会被转码的，类似这种：<a href="http://kevinfszu.github.io/2016/04/27/pandoc%EF%BC%9A%E4%B8%80%E4%B8%AA%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/images/diagram.jpg）" target="_blank" rel="external">http://kevinfszu.github.io/2016/04/27/pandoc%EF%BC%9A%E4%B8%80%E4%B8%AA%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80%E8%BD%AC%E6%8D%A2%E5%B7%A5%E5%85%B7/images/diagram.jpg）</a></p>
+<blockquote>
+<p>解决办法？  </p>
+<ol>
+<li>比较笨的就是：<code>hexo new &#39;English-or-pinyin-post-name&#39;</code>，（通过命令新建post会把<strong>文件名</strong>和<strong>文章标题</strong>都设置为命令中的那个字符串），然后打开md文件的时候再把文章标题title改为中文；  </li>
+<li>比较妥协的办法是：在站点配置文件_config.yml中把<code>new_post_name: :title.md</code>改为<code>new_post_name: :year-:month-:day.md</code>，直接用日期来做文件名和文章标题，不过还是省不了改一个有意义的文章标题。感觉这个办法比方法一更不可取，因为日期格式的文件名完全不表意，想要修改post的时候 你都不知道打开哪一个文件来改；  </li>
+<li>尚未实现但感觉可行的方法：通过gulp来构建自动化流程，先把md文件移动到另一个文件夹，然后通过插件实现 中文转拼音 重命名文件，把重命名之后的文件存放到原来的<code>_post</code>文件夹，最后触发编译和部署。</li>
+</ol>
+</blockquote>
+</li>
+<li><p>post中的图片资源（非网络链接）应该放在哪里？</p>
+<blockquote>
+<p>在根目录的<code>/source</code>文件夹下新建一个<code>images</code>文件夹来存放图片资源。不要把根目录下的source文件夹跟themes中具体某个主题里的source搞混了，根目录下的source文件夹永远都在，而themes中具体某个主题里的source只要你更换了主题就无法使用了。</p>
+</blockquote>
 </li>
 </ol>
 
