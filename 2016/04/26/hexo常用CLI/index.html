@@ -93,7 +93,7 @@
 使用hexo的过程中踩到的一些坑：
 
 此项作废。post的文件名不要用中文。否则，直接访问该post时，图片无法加载，因为此时图片的访问路径包含有中文(之前搞">
-<meta property="og:updated_time" content="2016-04-27T14:18:23.646Z">
+<meta property="og:updated_time" content="2016-04-27T14:23:46.611Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo常用CLI">
 <meta name="twitter:description" content="新建文章：
@@ -337,11 +337,11 @@
 <ol>
 <li>本地文件编译之后 全部都被保存在本地的public文件夹之下。而且部署的时候，也只会把public中的文件上传到github上。所以，图片资源的路径需要根据 <strong>文件上传到github之后 呈现出来的文件树结构</strong> 来考虑。</li>
 <li><code>/images/xxx.jpg</code>中的第一个<code>/</code>表示根目录（就本地来说，未部署之前就是public文件夹；具体到部署环境中就是 编译部署到github之后，github中的根目录。）  </li>
+<li>只要按照上面的做，基本不会有问题。但是，如果你使用atom等编辑器的实时预览markdown功能时，会发现预览中的图片加载失败，不用担心，这是正常的；相反，如果编辑器中预览可以加载图片才是异常的。</li>
 </ol>
 </blockquote>
 </li>
 </ol>
-<p>只要按照上面的做，基本不会有问题。但是，如果你使用atom等编辑器的实时预览markdown功能时，会发现预览中的图片加载失败，不用担心，这是正常的；相反，如果编辑器中预览可以加载图片才是异常的。</p>
 
       
     </div>
