@@ -1,0 +1,133 @@
+body {
+    font-family: "MicroSoft YaHei";
+    background: #efefef;
+}
+.wrapper {
+    width: 390px;
+    height: 100%;
+    margin: 100px auto;
+}
+/*register and login swap*/
+.doors {
+    height: 46px;
+    border-bottom: 2px solid #e6e6e6;
+    position: relative;
+}
+.swap1 {
+    display: inline;
+    float: left;
+    width: 120px;
+    padding-left: 10px;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #999;
+}
+.swap1 i {
+    display: inline-block;
+    zoom: 1;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    font-style: normal;
+    font-size: 14px;
+    color:#FFF;
+    background: url(./images/ico-circle2.png);
+}
+/*****steps*****/
+.steps {
+    height: 46px;
+    border-bottom: 2px solid #e6e6e6;
+    position: relative;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.step {
+    display: inline;
+    float: left;
+    width: 120px;
+    padding-left: 10px;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #999;
+}
+.step i {
+    display: inline-block;
+    zoom: 1;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    font-style: normal;
+    font-size: 14px;
+    color:#FFF;
+    background: url(./images/ico-circle2.png);
+}
+    #active {
+        color:#3e3e3e;
+        border-bottom: 2px solid #3270AE;
+    }
+    #active i {
+        background-image: url(./images/ico-circle1.png);
+    }
+
+/*****content*****/
+.swap {
+    width: 300px;
+    height: 350px;
+    margin: 50px auto 0 auto;
+}
+    /*fill*/
+    form.register input {
+        display: block;
+        width: 300px;
+        height: 30px;
+        margin: 0 auto 25px auto;
+    }
+
+    /*download*/
+    .download,
+    .verify,
+    .success {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+/*****content的last-and-next*****/
+.last-and-next {
+    width: 304px;
+    margin: 0 auto;
+    /*background: #ccc;*/
+}
+#last,
+#next {
+    width: 304px;
+}
+.last,
+.next {
+    width: 149px;
+    height: 35px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    color: #FFF;
+}
+.normal {
+    background: #3270AE;
+    box-shadow: 0 0 5px #3270AE;
+}
+    .normal:hover {
+        background: #25527F;
+        cursor: pointer;
+        box-shadow: 0 0 0 #25527F;
+    }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./register.css" />
+    <script src="./jquery-1.9.1.min.js"></script>
+    <script src="./register.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="steps">
+            <ul>
+                <li class="step" id="active" data-step-1>
+                    <i>1</i>
+                    <span>填写信息</span>
+                </li>
+                <li class="step" data-step-2>
+                    <i>2</i>
+                    <span>安装APP</span>
+                </li>
+                <li class="step" data-step-3>
+                    <i>3</i>
+                    <span>扫码验证</span>
+                </li>
+                <!--
+                <li class="step" data-step-4>
+                    <i>4</i>
+                    <span>注册成功</span>
+                </li>
+                -->
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <div class="swap fill" data-flag-1>
+                <form action="" class="register">
+                    <input type="text" class="user_account" name="user_account" placeholder=" 账号(手机号码)" />
+                    <input type="text" class="user_name" name="user_name" placeholder=" 姓名" />
+                    <input type="text" class="dept_name" name="dept_name" placeholder=" 公司名称" />
+                    <input type="text" class="password" name="password" placeholder=" 密码" />
+                    <input type="text" class="password_confirm" name="password_confirm" placeholder=" 确认密码" />
+                </form>
+            </div>
+
+            <div class="swap download hidden" data-flag-2>
+                <span>扫描二维码下载APP</span><br /><br />
+                <img src="./images/show2dcodepic.png" alt="扫描二维码下载APP" title="扫描二维码下载APP">
+            </div>
+
+            <div class="swap verify hidden" data-flag-3>
+                <span>扫描二维码进行验证</span><br /><br />
+                <img src="./images/show2dcodepic.png" alt="扫描二维码进行验证" title="扫描二维码进行验证">
+            </div>
+
+            <div class="swap success hidden" data-flag-4>
+                <span>注册成功并通过验证！</span><br /><br />
+                <span>欢迎使用优勤！</span>
+            </div>
+
+            <div class="last-and-next">
+                <button class="last hidden">上 一 步</button>
+                <button class="next normal" id="next">下 一 步</button>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
