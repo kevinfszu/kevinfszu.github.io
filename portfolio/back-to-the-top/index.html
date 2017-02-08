@@ -21,38 +21,49 @@
     <title>作品集</title>
 
     <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
     <style media="screen">
+        body {
+            height: 5000px;
+        }
 
+        #back-to-top {
+            display: none;
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            color: #999;
+            cursor: pointer;
+        }
+        #back-to-top:hover {
+            color: #222;
+        }
     </style>
 </head>
 
 <body>
-    <ul class="site-toolbar">
-        <li class="site-toolbar__item">
-            <i class="fa fa-cloud-download site-toolbar__icon"></i>
-            <div class="site-toolbar__block first-block">
-                <img src="./img/app-download.png" alt="二维码" style="width:120px; height:120px;">
-            </div>
-        </li>
-        <li class="site-toolbar__item">
-            <span class="site-toolbar__icon"><i class="fa fa-cloud-download"></i></span>
-            <div class="site-toolbar__block second-block">
-                <img src="./img/app-download.png" alt="二维码" style="width:120px; height:120px;">
-            </div>
-        </li>
-        <li class="site-toolbar__item">
-            <span class="site-toolbar__icon"><i class="fa fa-cloud-download"></i></span>
-            <div class="site-toolbar__block third-block">
-                <img src="./img/app-download.png" alt="二维码" style="width:120px; height:120px;">
-            </div>
-        </li>
-    </ul>
+    <div id="back-to-top"><i class="fa fa-caret-up fa-2x" aria-hidden="true"></i>TOP</div>
 
 
-
-    <script src=""></script>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
     <script>
+        $(function() {
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 100) {
+                    $('#back-to-top').fadeIn(0);
+                } else {
+                    $('#back-to-top').fadeOut(0);
+                }
+            });
+
+            $('#back-to-top').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 'slow');
+            });
+    	});
     </script>
 </body>
 
