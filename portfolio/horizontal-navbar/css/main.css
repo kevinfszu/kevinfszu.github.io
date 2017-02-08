@@ -24,6 +24,7 @@
     width: 96px;
     margin-left: -48px;
     border: 1px solid #E0E0E0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
 }
 .site-subnav::before {
     content: '';
