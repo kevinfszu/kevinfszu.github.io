@@ -1,0 +1,75 @@
+.site-nav,
+.site-nav ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.site-nav__li {
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+    padding-bottom: 16px;       // 以此确保鼠标指针在 li 与子导航之间的来回移动时子导航不会隐藏
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #4c4c4c;
+}
+
+.site-subnav {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    width: 96px;
+    margin-left: -48px;
+    border: 1px solid #E0E0E0;
+}
+.site-subnav::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -16px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+
+    border: 8px dashed transparent;
+    border-bottom-color: #E0E0E0;
+    border-bottom-style: solid;
+}
+
+.site-nav__li:hover .site-subnav {
+    display: block;
+    -webkit-animation: c .3s ease-in-out forwards;
+    animation: c .3s ease-in-out forwards;
+    -webkit-transform-origin: right center;
+    transform-origin: top center;       // 以顶部水平居中位置为基点
+}
+
+/*不透明度、缩放动画*/
+@keyframes c {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        opacity: 100;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.site-subnav__li {}
+
+.site-subnav__li a {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.site-subnav__li a:hover {
+    background: #f5f5f5;
+}
