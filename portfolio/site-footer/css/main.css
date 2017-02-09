@@ -1,3 +1,6 @@
+body {
+    font-family: Helvetica Neue,Helvetica,Segoe UI,DejaVu Sans,Arial,PingFang SC,Hiragino Sans GB,Source Han Sans,Microsoft Yahei,Heiti SC,sans-serif;
+}
 .site-footer {
     position: fixed;/*页面内容不多，为符合页脚语义，固定到底部*/
     bottom: 0;/*页面内容不多，为符合页脚语义，固定到底部*/
