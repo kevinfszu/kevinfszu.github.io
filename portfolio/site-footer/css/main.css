@@ -1,0 +1,60 @@
+.site-footer {
+    position: fixed;/*页面内容不多，为符合页脚语义，固定到底部*/
+    bottom: 0;/*页面内容不多，为符合页脚语义，固定到底部*/
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    background: #2e3842;
+}
+
+.site-footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.site-footer a {
+    text-decoration: none;
+    color: #7e8c8d;
+}
+
+.site-footer__column {
+    display: inline-block;
+}
+.site-footer__column:not(:first-child) {
+    /*各个ul之间顶部对齐*/
+    vertical-align: top;
+    margin-left: 80px;
+}
+
+.site-footer__title {
+    margin: 50px 0 30px;
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+}
+.site-footer__qr {
+    margin-top: 50px;
+}
+
+.site-footer__sublist li {
+    text-align: left;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.fa-weixin,
+.fa-qq,
+.fa-snapchat-ghost  {
+    width: 40px;
+    height: 40px;
+    color: #7e8c8d;
+}
+
+.site-footer__copy-right {
+    width: 840px;
+    margin: 30px auto 0;
+    padding: 30px 0;
+    font-size: 12px;
+    color: #7e848a;
+    border-top: 1px solid #434c55;
+}
