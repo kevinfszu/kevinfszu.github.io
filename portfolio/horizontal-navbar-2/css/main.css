@@ -1,0 +1,43 @@
+body {
+    font-family: Helvetica Neue,Helvetica,Segoe UI,DejaVu Sans,Arial,PingFang SC,Hiragino Sans GB,Source Han Sans,Microsoft Yahei,Heiti SC,sans-serif;
+}
+
+.site-nav {
+    padding-left: 0;
+    list-style: none;
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.site-nav__li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.site-nav__li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;/*下移2px使之与外层border重合*/
+    width: 100%;
+    height: 2px;
+    background: #666;
+
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s ease;
+}
+.site-nav__li:hover::after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.site-nav a {
+    display: inline-block;
+    width: 96px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #4c4c4c;
+}
