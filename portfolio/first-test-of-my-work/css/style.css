@@ -1,7 +1,7 @@
 
     body { background-color:#eeeadc; }
     #container {margin:25px auto;width:826px;}
-    
+
     .clearfix:after{
         display:block;
         content:".";
@@ -23,7 +23,7 @@
         /*background:silver;*/
     }
     .text_right { text-align:right; }
-    .grid_1 > div { 
+    .grid_1 > div {
         position:relative;
         top:60px;
         left:-25px;
@@ -64,8 +64,8 @@
         float:right;
         text-align:right;
     }
-    
-    
+
+
     /*nav导航栏*/
     #navigation {
         background:#232323;
@@ -93,7 +93,7 @@
         border-width:0 1px;
         border-color:#011;
     }
-    
+
     /*slide轮播图*/
     #slide {
         height:275px;
@@ -104,17 +104,17 @@
     }
     #slide img,#slide span {
         position:relative;
-    
+
     }
     #pic_1 {
         top:-200px;
         z-index:-9999;
-    }    
+    }
     #pic_2 {
         top:-635px;
         left:-10px;
         z-index:-9998;
-    }    
+    }
     #pic_3 {
         top:-625px;
         left:-311px;
@@ -129,11 +129,11 @@
     #pic_6 {
         top:-220px;
         left:60px;
-    }    
+    }
     #pic_7 {
         top:-220px;
         left:-30px;
-        
+
     }
     #text_1 {
         display：inline-block;
@@ -145,7 +145,7 @@
         font-size:40px;
         font-weight:900;
         color:#FFF;
-        
+
     }
     #text_2 {
         display：inline-block;
@@ -160,10 +160,10 @@
         font-weight:600;
         color:#D6D2CA;
     }
-    
+
     /*content_one内容一*/
     #content_one { margin:0 0 20px 0; }
-    #grid_left { 
+    #grid_left {
         width:231px;
         margin-right:5px;
     }
@@ -186,7 +186,7 @@
         font-family:Arial;
         font-size:18px;
     }
-    #grid_right { 
+    #grid_right {
         width:231px;
         margin-left:5px;
     }
@@ -221,7 +221,7 @@
         height:250px;
         margin:auto;
         text-align:center;
-        
+
     }
     h2,h3,h4,h5 {
         font-family:Arial;
@@ -233,22 +233,22 @@
         color:#5f5b50;
         text-align:justify;
     }
-    
+
     /*More分割线*/
     #more {
         vertical-align:middle;
-        background-image:url(../images/line_more.png);
+        background-image:url(../img/line_more.png);
         background-repeat:no-repeat;
         background-position:center;
         text-align:center;
     }
-    #more a:link,#more a:visited,#more a:hover,#more a:active { 
+    #more a:link,#more a:visited,#more a:hover,#more a:active {
         font-family:Georgia;
         font-style:italic;
         color:#2b5e5e;
         text-decoration:none;
     }
-    
+
     /*content_two内容二*/
     div#content_two > div {
         float:left;
@@ -271,16 +271,16 @@
     h2 a:link,h2 a:visited { color:#62001f;font-style:italic;text-decoration:none;}
     h2 a:hover { color:#af1742;font-style:normal;text-decoration:none;}
     h2 a:active { color:#62001f;font-style:italic;text-decoration:none;}
-    
+
     p span a:link,p span a:visited {
         font-family:Georgia;
         font-style:italic;
         font-size:14px;
         color:#2b5e5e;
-        
+
     }
     p span a:hover { text-decoration:none; }
-    
+
     .grid_5 div {
         width:300px;
         margin-right:15px;
@@ -336,15 +336,15 @@
         outline:none;
         border:none;
     }
-    
-    #tips { 
+
+    #tips {
         height:215px;
-        background-image:url(../images/tips.png);
+        background-image:url(../img/tips.png);
         background-repeat:no-repeat;
         background-position:center;
         text-align:center;
     }
-    #tips span { 
+    #tips span {
         display:block;
         width:120px;
         margin:auto auto 15px auto;
@@ -353,8 +353,8 @@
         color:#5f5b50;
     }
     #tips a { font-weight:bold; }
-    
-    
+
+
    /*footer页脚*/
     .grid_9 {
         float:left;
@@ -363,7 +363,7 @@
     .grid_9 h2 {
         margin-bottom:0;
     }
-    .grid_9 p { 
+    .grid_9 p {
         font-size:11px;
         margin:0 0 30px 0;
         text-align:center;
@@ -374,11 +374,11 @@
     .grid_10 {
         float:left;
         width:160px;
-        
+
     }
     .grid_10 h5 {
         text-align:center;
-        
+
     }
     .grid_10 a {
         font-family:Georgia;
@@ -389,6 +389,3 @@
     .grid_10 li {
         list-style:none;
     }
-    
-    
-    
