@@ -1,0 +1,60 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.fixed-bg {
+    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.scrolling-bg {
+    position: relative;
+    height: 100%;
+}
+
+.bg-1 {
+    background-image: url('../img/bg (1).jpg');
+}
+.color-1 {
+    background-color: rgb(129,199,132);
+}
+
+.bg-2 {
+    background-image: url('../img/bg (2).jpg');
+}
+.color-2 {
+    background-color: rgb(129,199,132);
+}
+
+.bg-3 {
+    background-image: url('../img/bg (3).jpg');
+}
+.color-3 {
+    background-color: rgb(129,199,132);
+}
+
+.bg-4 {
+    background-image: url('../img/bg (4).jpg');
+}
+.color-4 {
+    background-color: rgb(129,199,132);
+}
+
+.center-xy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.content-container {
+    color: #fff;
+}
